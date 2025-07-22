@@ -1,3 +1,22 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true,
+                    "ca": "C:/certs/global-bundle.pem",
+                }
+            },
+            "previewLimit": 50,
+            "server": "pindrop-main-db.c76mi2uquni6.us-west-2.rds.amazonaws.com",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "pindrop",
+            "database": "pindropDB",
+            "username": "pindropmaster",
+            "connectionTimeout": 30
+        }
+    ]
 }

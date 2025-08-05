@@ -8,8 +8,8 @@ const LandingPage: React.FC<{}> = () => {
 
     return (
         <>
-        <h1>Landing Page</h1>
-        <Button onClick={() => redirectTo("/login")}>Start</Button>
+            <h1>Landing Page sophia test</h1>
+            <Button onClick={() => redirectTo("/login")}>Start</Button>
         </>
     );
 

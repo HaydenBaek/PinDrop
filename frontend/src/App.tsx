@@ -9,24 +9,28 @@ import AccountPage from "./pages/AccountPage";
 import PreferencePage from "./pages/PreferencePage";
 import NotoficationsPage from "./pages/NotificationsPage";
 import HelpAndSupportPage from "./pages/HelpAndSupportPage";
+import Navbar from "./components/Navbar";
 
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/tripDetails" element={<TripDetailsPage/>} />
-        <Route path="/account" element={<AccountPage/>} />
-        <Route path="/preference" element={<PreferencePage/>} />
-        <Route path="/notifications" element={<NotoficationsPage/>} />
-        <Route path="/help" element={<HelpAndSupportPage/>} />
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/tripDetails" element={<TripDetailsPage/>} />
+          <Route path="/account" element={<AccountPage/>} />
+          <Route path="/preference" element={<PreferencePage/>} />
+          <Route path="/notifications" element={<NotoficationsPage/>} />
+          <Route path="/help" element={<HelpAndSupportPage/>} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
